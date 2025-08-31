@@ -1,0 +1,20 @@
+# https://moonrepo.dev/docs/config/toolchain
+$schema: './cache/schemas/toolchain.json'
+
+node:
+  version: 'latest'
+  packageManager: 'pnpm'
+  pnpm:
+    version: 'latest'
+  addEnginesConstraint: true
+  dedupeOnLockfileChange: true
+  inferTasksFromScripts: false
+
+typescript: {}
+
+rust:
+  version: 'stable'
+  bins: []
+  components: []
+  syncToolchainConfig: false
+  targets: []
