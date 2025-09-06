@@ -1,7 +1,11 @@
 name: xxx
 
 on: workflow_dispatch
-      
+
+env:
+  PROTO_LOG: trace
+  MOON_LOG: trace
+
 jobs:
   release-desktop:
     name: xxxx
@@ -20,4 +24,3 @@ jobs:
       - name: Install frontend dependencies
         working-directory: ./desktop
         run: pnpm install
-
